@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { ReactNode } from 'react';
 import { GlobalStyle } from '../styles/GlobalStyle';
+import Header from './Header';
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,7 +11,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <LayoutContainer>
       <GlobalStyle />
-      <header>header</header>
+      <Header />
       <main>{children}</main>
       <footer>footer</footer>
     </LayoutContainer>
@@ -24,7 +25,6 @@ const LayoutContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 1.5rem;
 
   main {
     flex: 1;
