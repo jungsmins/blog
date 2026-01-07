@@ -1,10 +1,12 @@
-import { HeadFC, PageProps } from 'gatsby';
+import { HeadFC, PageProps, Link } from 'gatsby';
+import { Layout } from '../components/Layout';
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <main>
-      <h1>NOT FOUND</h1>
-    </main>
+    <Layout>
+      <h1>404</h1>
+      <p>페이지를 찾을 수 없습니다.</p>
+    </Layout>
   );
 };
 

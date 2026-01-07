@@ -1,17 +1,16 @@
 import type { HeadFC, PageProps } from 'gatsby';
-import { GlobalStyle } from '../styles/GlobalStyle';
+import { Layout } from '../components/Layout';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <>
-      <GlobalStyle />
-      <main>
+    <Layout>
+      <div>
         <h1>My Blog</h1>
-      </main>
-    </>
+      </div>
+    </Layout>
   );
 };
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Home - My Blog</title>;
