@@ -1,11 +1,15 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
+import { GlobalStyle } from '../styles/GlobalStyle';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
-      <h1>My Blog</h1>
-    </main>
+    <>
+      <GlobalStyle />
+      <main>
+        <h1>My Blog</h1>
+      </main>
+    </>
   );
 };
 
