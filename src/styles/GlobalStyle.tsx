@@ -22,6 +22,9 @@ const globalStyles = css`
     @media (max-width: 639px) {
       font-size: 14px;
     }
+
+    background-color: #085773;
+    color: #ffffff;
   }
 
   h1,
@@ -78,21 +81,12 @@ const globalStyles = css`
 
   a {
     text-decoration: none;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: #3182ce;
-    }
+    color: inherit;
   }
 
   ul,
   ol {
-    margin-left: 1.5em;
-    margin-bottom: 1em;
-
-    li {
-      margin-bottom: 0.5em;
-    }
+    list-style: none;
   }
 
   code {
@@ -156,5 +150,4 @@ const globalStyles = css`
   }
 `;
 
-// Global 컴포넌트 export
 export const GlobalStyle = () => <Global styles={globalStyles} />;
