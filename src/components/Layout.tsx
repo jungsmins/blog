@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { ReactNode } from 'react';
 import { GlobalStyle } from '../styles/GlobalStyle';
 import Header from './Header';
+import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,7 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <GlobalStyle />
       <Header />
       <main>{children}</main>
-      <footer>footer</footer>
+      <Footer />
     </LayoutContainer>
   );
 };
